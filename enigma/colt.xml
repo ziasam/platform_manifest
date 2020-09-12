@@ -16,6 +16,8 @@
            fetch="https://github.com/ColtOS-Devices"
            revision="refs/heads/c11" />
 
+    <!-- Device Repos -->
+    <project path="device/colt/sepolicy" name="platform_device_colt_sepolicy" remote="colt" />
 
     <!-- General Repos -->
     <project path="build/make" name="build_make" remote="colt-temp" >
