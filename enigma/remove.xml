@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+    <!-- Build -->
+    <remove-project name="platform/build" />
+
     <!-- Device -->
     <remove-project name="device/amlogic/yukawa" />
     <remove-project name="device/amlogic/yukawa-kernel" />
@@ -60,5 +63,9 @@
     <remove-project name="device/sample" />
     <remove-project name="device/ti/beagle_x15" />
     <remove-project name="device/ti/beagle_x15-kernel" />
+
+    <!-- Hardware -->
+    <remove-project name="platform/hardware/interfaces" />
+    <remove-project name="platform/packages/apps/Settings" />
 
 </manifest>

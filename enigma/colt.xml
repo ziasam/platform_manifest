@@ -17,10 +17,24 @@
            revision="refs/heads/c11" />
 
 
+    <!-- General Repos -->
+    <project path="build/make" name="build_make" remote="colt-temp" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>
+
+    <!-- Hardware Repos -->
+    <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="colt-temp" />
+    <project path="hardware/colt/interfaces" name="platform_hardware_colt_interfaces" remote="colt-temp" />
+
     <!-- Packages Repos -->
     <project path="packages/apps/ColtCenter" name="platform_packages_apps_ColtCenter" remote="colt" />
-    
-
+    <project path="packages/apps/Settings" name="packages_apps_Settings" remote="colt-temp" />    
 
     <!-- Vendor Repo -->
     <project path="vendor/colt" name="platform_vendor_colt" remote="colt" />
