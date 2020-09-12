@@ -4,10 +4,14 @@
   <remote  name="github"
            fetch="https://github.com" />
 
+  <remote  name="colt-temp"
+           fetch="https://github.com/ColtOSTemp"
+           revision="refs/heads/c11" />
+
   <remote  name="colt"
            fetch="https://github.com/Colt-Enigma"
            revision="refs/heads/c11" />
-           
+          
   <remote  name="colt-devices"
            fetch="https://github.com/ColtOS-Devices"
            revision="refs/heads/c11" />
