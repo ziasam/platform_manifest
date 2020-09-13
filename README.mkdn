@@ -1,4 +1,4 @@
-ColtOS-Android10 Sources
+ColtOS-Android R Sources
 ===============================
 
 [![Download ColtOS](https://img.shields.io/sourceforge/dm/coltos.svg?color=3498DB&label=ColtOS%20Downloads&style=for-the-badge&labelColor=1B4F72&logo=sourceforge)](https://sourceforge.net/projects/coltos/files)
@@ -42,7 +42,7 @@ To initialize your local repository using the ColtOS trees, use a
 command like this:
 
 ```bash
-  repo init -u git://github.com/Colt-Enigma/platform_manifest.git -b c10
+  repo init -u git://github.com/ColtOSTemp/platform_manifest.git -b c11
 ```
   
 Then to sync up:
