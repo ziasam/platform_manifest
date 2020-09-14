@@ -4,14 +4,10 @@
   <remote  name="github"
            fetch="https://github.com" />
 
-  <remote  name="colt-temp"
+  <remote  name="colt"
            fetch="https://github.com/ColtOSTemp"
            revision="refs/heads/c11" />
 
-  <remote  name="colt"
-           fetch="https://github.com/Colt-Enigma"
-           revision="refs/heads/c11" />
-          
   <remote  name="colt-devices"
            fetch="https://github.com/ColtOS-Devices"
            revision="refs/heads/c11" />
@@ -20,7 +16,7 @@
     <project path="device/colt/sepolicy" name="platform_device_colt_sepolicy" remote="colt" />
 
     <!-- General Repos -->
-    <project path="build/make" name="build_make" remote="colt-temp" >
+    <project path="build/make" name="build_make" remote="colt" revision="c11" >
         <copyfile src="core/root.mk" dest="Makefile" />
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -29,18 +25,43 @@
         <linkfile src="target" dest="build/target" />
         <linkfile src="tools" dest="build/tools" />
     </project>
+    <project path="build/soong" name="platform_build_soong" remote="colt" revision="c11" >
+        <linkfile src="root.bp" dest="Android.bp" />
+        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+    </project>
+    <project path="bionic" name="platform_bionic" remote="colt" revision="c11" />
+    <project path="bootable/recovery" name="platform_bootable_recovery" remote="colt" revision="c11" />
+
+    <!-- frameworks -->
+    <project path="frameworks/av" name="platform_frameworks_av" remote="colt" revision="c11" />
+    <project path="frameworks/base" name="platform_frameworks_base" remote="colt" revision="c11" />
+    <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="colt" revision="c11" />
+    <project path="frameworks/native" name="platform_frameworks_native" remote="colt" revision="c11" />
+    <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="colt" revision="c11" />
 
     <!-- Hardware Repos -->
-    <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="colt-temp" />
-    <project path="hardware/colt/interfaces" name="platform_hardware_colt_interfaces" remote="colt-temp" />
+    <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="colt" revision="c11" />
+    <project path="hardware/colt/interfaces" name="platform_hardware_colt_interfaces" remote="colt" revision="c11" />
+
+    <project path="hardware/qcom/bootctrl" name="platform_hardware_qcom_bootctrl" remote="colt" revision="c11" />
+    <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" remote="colt" revision="c11" />
+    <project path="hardware/qcom/gps" name="platform_hardware_qcom_gps" remote="colt" revision="c11" />
+    <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" remote="colt" revision="c11" />
+    <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" remote="colt" revision="c11" />
+    <project path="hardware/qcom/data/ipacfg-mgr" name="platform_hardware_qcom_data_ipacfg-mgr" remote="colt" revision="c11" />
+    <project path="hardware/qcom/camera" name="platform_hardware_qcom_camera" remote="colt" revision="c11" />
+    <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="colt" revision="c11" />
+    <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="colt" revision="c11" />
+    <project path="hardware/nxp/nfc" name="platform_hardware_nxp_nfc" remote="colt" revision="c11" />
+    <project path="hardware/ril" name="platform_hardware_ril" remote="colt" revision="c11" />
 
     <!-- Packages Repos -->
-    <project path="packages/apps/ColtCenter" name="platform_packages_apps_ColtCenter" remote="colt" />
-    <project path="packages/apps/Settings" name="packages_apps_Settings" remote="colt-temp" />    
+    <project path="packages/apps/ColtCenter" name="platform_packages_apps_ColtCenter" remote="colt" revision="c11" />
+    <project path="packages/apps/Settings" name="packages_apps_Settings" remote="colt" revision="c11" />    
 
     <!-- Vendor Repo -->
-    <project path="vendor/colt" name="platform_vendor_colt" remote="colt" />
-    <project path="vendor/ColtSpares" name="platform_vendor_ColtSpares" remote="colt" />
+    <project path="vendor/colt" name="platform_vendor_colt" remote="colt" revision="c11" />
+    <project path="vendor/ColtSpares" name="platform_vendor_ColtSpares" remote="colt" revision="c11" />
 
 
 </manifest>

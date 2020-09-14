@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-    <!-- Build -->
+    <!-- General repos -->
     <remove-project name="platform/build" />
+    <remove-project name="platform/build/soong" />
+    <remove-project name="platform/bionic" />
+    <remove-project name="platform/bootable/recovery" />
 
     <!-- Device -->
     <remove-project name="device/amlogic/yukawa" />
@@ -64,8 +67,28 @@
     <remove-project name="device/ti/beagle_x15" />
     <remove-project name="device/ti/beagle_x15-kernel" />
 
-    <!-- Hardware -->
+    <!-- Framework repos -->
+    <remove-project name="platform/frameworks/av" />
+    <remove-project name="platform/frameworks/base" />
+    <remove-project name="platform/frameworks/opt/telephony" />
+    <remove-project name="platform/frameworks/native" />
+    <remove-project name="platform/frameworks/opt/net/wifi" />
+
+    <!-- Hardware repos -->
+    <remove-project name="platform/hardware/qcom/bootctrl" />
+    <remove-project name="platform/hardware/qcom/bt" />
+    <remove-project name="platform/hardware/qcom/camera" />
+    <remove-project name="platform/hardware/qcom/gps" />
+    <remove-project name="platform/hardware/qcom/wlan" />
+    <remove-project name="platform/hardware/qcom/keymaster" />
+    <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
+    <remove-project name="platform/hardware/libhardware" />
+    <remove-project name="platform/hardware/libhardware_legacy" />
+    <remove-project name="platform/hardware/nxp/nfc" />
+    <remove-project name="platform/hardware/ril" />
     <remove-project name="platform/hardware/interfaces" />
+
+    <!-- Packages -->
     <remove-project name="platform/packages/apps/Settings" />
 
 </manifest>
