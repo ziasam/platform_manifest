@@ -825,4 +825,10 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
+  <!-- Remove unused AOSP repos -->
+  <include name="enigma/remove.xml" />
+
+  <!-- Colt additions -->
+  <include name="enigma/colt.xml" />
+
 </manifest>
