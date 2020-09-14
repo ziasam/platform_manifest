@@ -61,7 +61,7 @@
 
     <!-- Vendor Repo -->
     <project path="vendor/colt" name="platform_vendor_colt" remote="colt" revision="c11" />
-    <project path="vendor/ColtSpares" name="platform_vendor_ColtSpares" remote="colt" revision="c11" />
+    <!-- project path="vendor/ColtSpares" name="platform_vendor_ColtSpares" remote="colt" revision="c11" / -->
 
     <!-- prebuilt tools -->
     <project path="prebuilts/tools-colt" name="platform_prebuilts_tools-colt" remote="colt" revision="c10" />
