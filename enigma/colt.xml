@@ -31,6 +31,7 @@
     </project>
     <project path="bionic" name="platform_bionic" remote="colt" revision="c11" />
     <project path="bootable/recovery" name="platform_bootable_recovery" remote="colt" revision="c11" />
+    <project path="system/core" name="platform_system_core" remote="colt" />
 
     <!-- frameworks -->
     <project path="frameworks/av" name="platform_frameworks_av" remote="colt" revision="c11" />
