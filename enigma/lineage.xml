@@ -13,8 +13,9 @@
     <!-- external -->
     <project path="external/json-c" name="android_external_json-c" remote="lineage" revision="lineage-17.1" />
 
-    <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" remote="lineage" />
-    <project path="vendor/qcom/opensource/audio" name="platform_vendor_qcom_opensource_audio" remote="lineage" />
-    <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="lineage" />
+    <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="lineage" />
+    <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="lineage" />
+    <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="lineage" />
+    <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="lineage" />
 
 </manifest>
