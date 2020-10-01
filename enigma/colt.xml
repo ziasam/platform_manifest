@@ -31,6 +31,11 @@
     <project path="bionic" name="platform_bionic" remote="colt" revision="c11" />
     <project path="bootable/recovery" name="platform_bootable_recovery" remote="colt" revision="c11" />
 
+    <!-- Device Repos -->
+    <project path="device/colt/sepolicy" name="platform_device_colt_sepolicy" remote="colt" />
+    <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="colt" />
+    <project path="device/qcom/sepolicy-legacy" name="platform_device_qcom_sepolicy-legacy" remote="colt" />
+    <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy-legacy-um" remote="colt" />
 
     <!-- frameworks -->
     <project path="frameworks/av" name="platform_frameworks_av" remote="colt" revision="c11" />
@@ -82,6 +87,7 @@
 
     <!-- system -->
     <project path="system/core" name="platform_system_core" remote="colt" revision="c11" />
+    <project path="system/sepolicy" name="platform_system_sepolicy" remote="colt" revision="c11" />
     <project path="system/vold" name="platform_system_vold" remote="colt" revision="c11" />
 
     <!-- services -->
