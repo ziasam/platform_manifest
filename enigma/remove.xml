@@ -92,6 +92,7 @@
   <remove-project name="platform/hardware/nxp/nfc" />
   <remove-project name="platform/hardware/ril" />
   <remove-project name="platform/hardware/interfaces" />
+  <remove-project name="platform/hardware/qcom/sdm845/display" /> 
 
   <!-- System repos -->
   <remove-project name="platform/system/apex" />
