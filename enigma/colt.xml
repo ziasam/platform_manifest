@@ -56,10 +56,6 @@
     <project path="hardware/qcom/data/ipacfg-mgr" name="platform_hardware_qcom_data_ipacfg-mgr" remote="colt" revision="c11" />
     <project path="hardware/qcom/camera" name="platform_hardware_qcom_camera" remote="colt" revision="c11" />
     <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="colt" revision="c11" />
-    <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="colt" revision="c11" />
-    <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="colt" revision="c11" />
-    <project path="hardware/nxp/nfc" name="platform_hardware_nxp_nfc" remote="colt" revision="c11" />
-    <project path="hardware/ril" name="platform_hardware_ril" remote="colt" revision="c11" />
     <project path="hardware/colt/interfaces" name="platform_hardware_colt_interfaces" remote="colt" revision="c11" />
 
     <!-- caf -->
