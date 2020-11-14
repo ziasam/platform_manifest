@@ -63,7 +63,6 @@
     <project path="hardware/qcom-caf/msm8996/media" name="platform_hardware_qcom_media" remote="colt" revision="c11-caf-8996"/>
     <project path="hardware/qcom-caf/msm8996/display" name="platform_hardware_qcom_display" remote="colt" revision="c11-caf-8996"/>
     <project path="hardware/qcom-caf/bt" name="platform_hardware_qcom_bt" remote="colt" revision="c11-caf" />
-    <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" remote="colt" revision="c11" />
     <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom_wlan" remote="colt" revision="c11-caf" />
 
     <!-- external -->
