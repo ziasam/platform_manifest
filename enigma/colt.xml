@@ -31,6 +31,11 @@
     <project path="bionic" name="platform_bionic" remote="colt" revision="c11" />
     <project path="bootable/recovery" name="platform_bootable_recovery" remote="colt" revision="c11" />
 
+    <!-- Device Repos -->
+    <project path="device/colt/sepolicy" name="platform_device_colt_sepolicy" remote="colt" />
+    <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="colt" />
+    <project path="device/qcom/sepolicy-legacy" name="platform_device_qcom_sepolicy-legacy" remote="colt" />
+    <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy-legacy-um" remote="colt" />
 
     <!-- frameworks -->
     <project path="frameworks/av" name="platform_frameworks_av" remote="colt" revision="c11" />
@@ -62,14 +67,19 @@
     <project path="hardware/qcom-caf/msm8996/media" name="platform_hardware_qcom_media" remote="colt" revision="c11-caf-8996"/>
     <project path="hardware/qcom-caf/msm8996/display" name="platform_hardware_qcom_display" remote="colt" revision="c11-caf-8996"/>
     <project path="hardware/qcom-caf/bt" name="platform_hardware_qcom_bt" remote="colt" revision="c11-caf" />
+    <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" remote="colt" revision="c11" />
     <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom_wlan" remote="colt" revision="c11-caf" />
 
     <!-- external -->
     <project path="external/tinycompress" name="platform_external_tinycompress" remote="colt" revision="c11" />
+    <project path="external/selinux" name="platform_external_selinux" remote="colt" revision="c11" />
 
     <!-- prebuilts -->
     <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="colt" revision="c11" />
     <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="colt" revision="c11" />
+    <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="colt" revision="c11" />
+    <project path="prebuilts/abi-dumps/vndk" name="platform_prebuilts_abi-dumps_vndk" remote="colt" revision="c11" />
+    <project path="prebuilts/tools-colt" name="platform_prebuilts_tools-colt" remote="colt" revision="c11" />
 
     <!-- packages -->
     <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="colt" revision="c11" />
@@ -77,6 +87,7 @@
 
     <!-- system -->
     <project path="system/core" name="platform_system_core" remote="colt" revision="c11" />
+    <project path="system/sepolicy" name="platform_system_sepolicy" remote="colt" revision="c11" />
     <project path="system/vold" name="platform_system_vold" remote="colt" revision="c11" />
 
     <!-- services -->
@@ -91,6 +102,7 @@
     <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" remote="colt" revision="c11" />
     <project path="vendor/qcom/opensource/audio" name="platform_vendor_qcom_opensource_audio" remote="colt" revision="c11" />
     <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="colt" revision="c11" />
+    <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" remote="colt" revision="c11" />
 
 </manifest>
 
