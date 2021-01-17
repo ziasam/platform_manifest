@@ -83,12 +83,20 @@
 
     <!-- packages -->
     <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="colt" revision="c11" />
+    <project path="packages/apps/ColtEnigma" name="platform_packages_apps_ColtEnigma" remote="colt" revision="c11" />
     <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="colt" revision="c11" />
+    <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="colt" revision="c11" />
+    <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="colt" revision="c11" />
+    <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="colt" revision="c11" />
+    <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="colt" />
+    <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="colt" />
 
     <!-- system -->
     <project path="system/core" name="platform_system_core" remote="colt" revision="c11" />
     <project path="system/sepolicy" name="platform_system_sepolicy" remote="colt" revision="c11" />
     <project path="system/vold" name="platform_system_vold" remote="colt" revision="c11" />
+    <project path="system/netd" name="platform_system_netd" remote="colt" revision="c11" />
+    <project path="system/update_engine" name="system_update_engine" remote="colt" />
 
     <!-- services -->
     <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="colt" revision="c11" />
@@ -96,6 +104,7 @@
 
     <!-- vendor -->
     <project path="vendor/colt" name="platform_vendor_colt" remote="colt" revision="c11" />
+    <project path="vendor/ColtSpares" name="platform_vendor_ColtSpares" remote="colt" revision="c11" />
     <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="colt" revision="c11" />
     <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="colt" revision="c11" />
     <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="colt" revision="c11" />
